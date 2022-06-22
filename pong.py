@@ -1,13 +1,12 @@
-import sys
-from tkinter import *
+import tkinter
 
-root = Tk()
-term = Frame(root, height = 500, width = 500)
+root = tkinter.Tk()
+term = tkinter.Frame(root, height = 500, width = 500)
 
-term.pack(fill = BOTH, expand = YES)
+term.pack(fill = tkinter.BOTH, expand = tkinter.YES)
 wid = term.winfo_id()
 
-canvas = Canvas(width = 500, height = 500, bg = 'white')
+canvas = tkinter.Canvas(width = 500, height = 500, bg = 'white')
 canvas.pack()
 
 def vlavo(p):
