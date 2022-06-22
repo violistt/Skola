@@ -1,8 +1,9 @@
+import tkinter
 import random
-from tkinter import *
 
-root = Tk()
-canvas = Canvas(width = 500, height = 500, bg = 'white')
+root = tkinter.Tk()
+
+canvas = tkinter.Canvas(width = 500, height = 500, bg = 'white')
 canvas.pack()
 
 def krtko(suradnica):
@@ -33,5 +34,4 @@ canvas.create_oval(x - 30, y - 30, x + 30, y + 30, fill = 'red', tags = 'krtko')
 cnt = 0
 canvas.create_text(450, 450, text = cnt, tags = 'cnt')
 canvas.bind('<Button-1>', krtko)
-
 root.mainloop()
