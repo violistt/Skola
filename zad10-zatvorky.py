@@ -13,7 +13,7 @@ dlzka = len(vyraz)
 lave, prave = 0, 0
 ok = 1
 stak = [] # zasobnik na ukladanie farieb pravych zatvoriek
-farby = ['red', 'green', 'blue', 'orange', 'yellow', 'magenta', 'brown', 'gray']
+farby = ['red', 'green', 'blue', 'orange', 'yellow', 'magenta', 'brown']
 f = 0
 ofarbenie = ['black'] * dlzka
 for i, clen in enumerate(vyraz):
