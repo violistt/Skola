@@ -29,7 +29,7 @@ for i, clen in enumerate(vyraz):
             break
         ofarbenie[i] = farby[stak[-1]]
         stak.pop()
-ok &= (lave == prave)
+ok &= (lave == prave) # Je rovnaky pocet pravych aj lavych?
 if (not ok):
     canvas.create_text(200, 200, text = "Uzátvorkovanie nie je správne")
 else:
