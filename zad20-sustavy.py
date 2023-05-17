@@ -12,9 +12,9 @@ with open('cis-sustavy.txt', 'r') as file:
         mocnina = 0
         while (_n):
             try:
-                k = int(_n[-1])
+                k = int(_n[-1]) # 0-9
             except:
-                k = ord(_n[-1]) - 55
+                k = ord(_n[-1]) - 55 # A-F
             desiat += k * (zaklad ** mocnina)
             mocnina += 1
             _n = _n[:-1]
