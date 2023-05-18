@@ -30,10 +30,7 @@ def skontroluj():
         canvas.create_text(135, 225, text = "SPRÁVNE", font = 15)
     else:
         canvas.create_text(135, 225, text = "NESPRÁVNE", font = 15)
-
         
-
-
 entry = tkinter.Entry()
 entry.pack()
 button = tkinter.Button(text = "Zadaj vysledok", command = skontroluj)
