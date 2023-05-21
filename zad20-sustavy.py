@@ -7,7 +7,7 @@ with open('cis-sustavy.txt', 'r') as file:
         zaklad = int(zaklad)
         # desiat = int(n, zaklad) # Bud to takto okasles
         # Alebo si to napises sam
-        _n = n
+        _n = list(n)
         desiat = 0
         mocnina = 0
         while (_n):
@@ -17,5 +17,5 @@ with open('cis-sustavy.txt', 'r') as file:
                 k = ord(_n[-1]) - 55 # A-F
             desiat += k * (zaklad ** mocnina)
             mocnina += 1
-            _n = _n[:-1]
+            _n.pop() # O(1)
         print(f"({n}){zaklad} = {desiat}")
